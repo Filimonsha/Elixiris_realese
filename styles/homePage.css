@@ -1,0 +1,261 @@
+.banner {
+  padding-left: 12.5%;
+  padding-top: 220px;
+  padding-bottom: 262px;
+  background: #e5ece4;
+  background-repeat: no-repeat;
+}
+
+.banner__wrapper {
+  max-width: 761px;
+}
+
+.banner__titile {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(24px + 36 * (100vw / 1920));
+  line-height: 140%;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.banner__titile span {
+  color: #688c63;
+}
+
+.banner__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
+  color: #333333;
+  margin-bottom: 60px;
+}
+
+.banner__button {
+  background: #69a561;
+  padding: 17px 23px;
+  border: none;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.cards {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 101px;
+  padding-left: 12.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f7f7f7;
+}
+
+.cards__slider {
+  position: relative;
+}
+
+.cards__description {
+  margin-right: 51px;
+}
+
+.cards__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.cards__title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(24px + 36 * (100vw / 1920));
+  line-height: 140%;
+  color: #4c604a;
+  margin-bottom: 40px;
+}
+
+.cards__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #555555;
+}
+
+.home-page__header {
+  background: #e5ece4;
+}
+
+.slider__prev {
+  margin-right: 30px;
+}
+
+.fresh {
+  padding: 100px 0;
+  padding-left: 12.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 19px;
+          column-gap: 19px;
+}
+
+.fresh__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fresh__title {
+  font-size: 60px;
+  margin-right: 131px;
+  max-width: 344px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* or 84px */
+  color: #4c604a;
+  padding-top: 149px;
+}
+
+@media (max-width: 1900px) {
+  .fresh__title {
+    font-size: calc(24px + 36 * (100vw / 4400));
+  }
+}
+
+.fresh__woman-img {
+  max-height: 100%;
+}
+
+.fresh__woman-img img {
+  width: 100%;
+}
+
+.fresh__plant-img {
+  max-height: 925px;
+}
+
+.fresh__about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.fresh__banner {
+  background: #4c604a;
+  padding: 21.5% 150px;
+  max-width: 700px;
+  max-height: 925px;
+  margin-left: -93px;
+}
+
+@media (max-width: 1660px) {
+  .fresh__banner {
+    padding: 50px 50px;
+  }
+}
+
+.fresh__banner__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: calc(18px + 4 * (100vw / 1920));
+  line-height: 150%;
+  /* or 33px */
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.fresh__banner__button {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  padding: 13px 67px;
+  border: 1px solid #ffffff;
+  text-align: center;
+}
+
+.moment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 213px;
+  padding-left: 99px;
+}
+
+.moment__plant {
+  margin-right: 88px;
+}
+
+.moment__wrapper {
+  max-width: 455px;
+}
+
+.moment img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.moment__title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 140%;
+  /* or 84px */
+  color: #4c604a;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 140%;
+  /* or 84px */
+  color: #4c604a;
+  margin-bottom: 4px;
+}
+
+.moment__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
+  color: #555555;
+  margin-bottom: 60px;
+}
+
+.moment__button {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+  padding: 18px 43px;
+  color: #4c604a;
+  border: 2.44089px solid #4c604a;
+  max-width: 334px;
+}
+/*# sourceMappingURL=homePage.css.map */

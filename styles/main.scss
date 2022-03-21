@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"),
+    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.ttf") format("truetype"),
+    url("/fonts//Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"),
+    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+.header {
+  padding: 20px 55px;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: minmax(auto, 90px) minmax(auto, 844px);
+  justify-content: space-between;
+  align-items: center;
+  // column-gap:1fr;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav__link:not(:last-child) {
+      color: #333333;
+    }
+    .nav__link:nth-child(3n) {
+      margin-right: 35px;
+    }
+    .nav__link {
+      font-family: "OpenSans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 23px;
+      letter-spacing: 0.3em;
+    }
+    .nav__link_book-course-link {
+      // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 13px 25px;
+      border: 1px solid #4c604a;
+      color: #4c604a;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+
+.footer {
+  background: #4c604a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 56px;
+  &__annotation{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    justify-content: space-between;
+    align-items:center;
+    }
+  &__nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 118px minmax(auto, 448px) 85px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 40px;
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.3em;
+
+    color: #ffffff;
+  }
+  &__annotation__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    /* identical to box height, or 22px */
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .book-btn {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.3em;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 14px 52px;
+    background: transparent;
+    margin-bottom: 40px;
+  }
+  &__pay-pal_mobile {
+    display: none;
+    @media (max-width: 320px) {
+    }
+  }
+  
+}

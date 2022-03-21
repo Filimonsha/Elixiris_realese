@@ -1,0 +1,139 @@
+/* Слайдер */
+.slider {
+    min-width: 0;
+    //   width: 100%;
+      max-width: 1205px;
+
+  padding-top: 196px;
+  padding-bottom: 86px;
+  position: relative;
+}
+.slider__item {
+//   border: 1px solid black;
+
+max-width: 380px;
+}
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    // max-width: 100%;
+    //   max-width: 1200px;
+
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд активный (показывается) */
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slider__navigation {
+        cursor: pointer;
+
+  position: absolute;
+  bottom: 101px;
+  right: 320px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  margin-right: 30px;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+/* Слайд */
+.slick-slide {
+  margin-right: 40px;
+    text-align: center;
+  padding: 0 25px;
+  padding-top: 350px;
+  padding-bottom: 52px;
+  background: #FFFFFF;
+  background-repeat: no-repeat;
+  
+}
+.slider__item {
+//   text-align: center;
+//   padding: 0 25px;
+//   padding-top: 350px;
+//   padding-bottom: 52px;
+//   background: #FFFFFF;
+//   background-repeat: no-repeat;
+  
+  &1 {
+    background-image: url("/img/gentle.jpg");
+  }
+  &2 {
+    background-image: url("/img/ScienceBased.jpg");
+  }
+  &3 {
+    background-image: url("/img/Economical.jpg");
+  }
+  &4 {
+    background-image: url("/img/Pure.jpg");
+  }
+  &5 {
+    background-image: url("/img/Comfortable.jpg");
+  }
+  &6 {
+    background-image: url("/img/Calming.jpg");
+  }
+
+}
+.slider__item__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 45px;
+  color: #688c63;
+  margin-bottom: 14px;
+}
+.slider__item__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  color: #555555;
+}

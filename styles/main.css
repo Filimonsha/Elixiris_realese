@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.ttf") format("truetype"), url("/fonts//Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 55px;
+}
+
+.navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 90px) minmax(auto, 844px);
+      grid-template-columns: minmax(auto, 90px) minmax(auto, 844px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .nav .nav__link:not(:last-child) {
+  color: #333333;
+}
+
+.navigation .nav .nav__link:nth-child(3n) {
+  margin-right: 35px;
+}
+
+.navigation .nav .nav__link {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+}
+
+.navigation .nav .nav__link_book-course-link {
+  padding: 13px 25px;
+  border: 1px solid #4c604a;
+  color: #4c604a;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.footer {
+  background: #4c604a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 56px;
+}
+
+.footer__annotation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 118px minmax(auto, 448px) 85px;
+      grid-template-columns: 118px minmax(auto, 448px) 85px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 40px;
+}
+
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__link {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+
+.footer__annotation__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer .book-btn {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.3em;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 14px 52px;
+  background: transparent;
+  margin-bottom: 40px;
+}
+
+.footer__pay-pal_mobile {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
