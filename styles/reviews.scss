@@ -1,9 +1,9 @@
 @import "__variables.scss";
-.reviews__header{
-    background:$super-light-green;
+.reviews__header {
+  background: $super-light-green;
 }
 .top {
-    background:$super-light-green;
+  background: $super-light-green;
   img {
     max-width: 100%;
     position: relative;
@@ -25,4 +25,139 @@
     font-size: 22px;
     line-height: 150%;
   }
+}
+
+.reviews {
+  padding-top: 150px;
+  padding-bottom: 141px;
+  &__wrap {
+    max-width: 1225px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__title {
+    padding-top: 33px;
+    font-size: 28px;
+    line-height: 150%;
+    /* or 42px */
+
+    color: #688c63;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 150%;
+    /* or 33px */
+
+    color: #555555;
+    margin-bottom: 59px;
+  }
+  img {
+    max-width: 100%;
+  }
+  &__author {
+    position: relative;
+  }
+  &__comma {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__slider {
+    &__item {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(auto, 150px) 1fr;
+      column-gap: 125px;
+    }
+  }
+  &__desc-of-author {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 45px;
+
+    color: #555555;
+
+    opacity: 0.7;
+    margin-bottom: 4px;
+  }
+  &__employment {
+    /* Text */
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    /* identical to box height, or 33px */
+
+    color: #555555;
+
+    opacity: 0.5;
+    margin-bottom: 5px;
+  }
+  &__location {
+    /* Text */
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    /* identical to box height, or 33px */
+
+    color: #555555;
+  }
+  &__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.slider {
+  min-width: 0;
+  //   width: 100%;
+  max-width: 1205px;
+
+  padding-top: 196px;
+  // padding-bottom: 86px;
+  position: relative;
+}
+.slider__item {
+  //   border: 1px solid black;
+
+  max-width: 380px;
+}
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__navigation {
+  svg:hover {
+    path {
+      fill: $white;
+    }
+    circle {
+      fill: $light-green;
+    }
+  }
+  cursor: pointer;
+}
+.slider__prev{
+  margin-right: 30px;
 }

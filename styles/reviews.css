@@ -29,4 +29,148 @@
   font-size: 22px;
   line-height: 150%;
 }
+
+.reviews {
+  padding-top: 150px;
+  padding-bottom: 141px;
+}
+
+.reviews__wrap {
+  max-width: 1225px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reviews__title {
+  padding-top: 33px;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  color: #688c63;
+  margin-bottom: 50px;
+}
+
+.reviews__text {
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
+  color: #555555;
+  margin-bottom: 59px;
+}
+
+.reviews img {
+  max-width: 100%;
+}
+
+.reviews__author {
+  position: relative;
+}
+
+.reviews__comma {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reviews__slider__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 150px) 1fr;
+      grid-template-columns: minmax(auto, 150px) 1fr;
+  -webkit-column-gap: 125px;
+          column-gap: 125px;
+}
+
+.reviews__desc-of-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__name {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 45px;
+  color: #555555;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.reviews__employment {
+  /* Text */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  color: #555555;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+.reviews__location {
+  /* Text */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  color: #555555;
+}
+
+.reviews__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.slider {
+  min-width: 0;
+  max-width: 1205px;
+  padding-top: 196px;
+  position: relative;
+}
+
+.slider__item {
+  max-width: 380px;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__navigation {
+  cursor: pointer;
+}
+
+.reviews__navigation svg:hover path {
+  fill: #FFFFFF;
+}
+
+.reviews__navigation svg:hover circle {
+  fill: #688C63;
+}
+
+.slider__prev {
+  margin-right: 30px;
+}
 /*# sourceMappingURL=reviews.css.map */
