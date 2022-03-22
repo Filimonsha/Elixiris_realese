@@ -1,3 +1,4 @@
+@import "__variables.scss";
 /* Слайдер */
 .slider {
     min-width: 0;
@@ -44,6 +45,15 @@ max-width: 380px;
 }
 /* Стрелка */
 .slider__navigation {
+    // display: none;
+    svg:hover{
+        path{
+            fill: $white;
+        }
+        circle{
+            fill: $color-light-green;
+        }
+    }
         cursor: pointer;
 
   position: absolute;

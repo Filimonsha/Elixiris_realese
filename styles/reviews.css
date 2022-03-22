@@ -1,0 +1,32 @@
+.reviews__header {
+  background: #E5ECE4;
+}
+
+.top {
+  background: #E5ECE4;
+  padding-top: 152px;
+}
+
+.top img {
+  max-width: 100%;
+  position: relative;
+  bottom: -6px;
+}
+
+.top__wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+}
+
+.top__h1 {
+  color: #4C604A;
+  margin-bottom: 40px;
+}
+
+.top__text {
+  margin-bottom: 136px;
+  font-size: 22px;
+  line-height: 150%;
+}
+/*# sourceMappingURL=reviews.css.map */
