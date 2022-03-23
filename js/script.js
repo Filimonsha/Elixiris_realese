@@ -1,15 +1,32 @@
 $(document).ready(function () {
   $(".slider").slick({
     slidesToShow: 3,
-    prevArrow: $(".slider__prev"),
-    nextArrow: $(".slider__next"),
+    slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1441,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
+    prevArrow: $(".slider__prev"),
+    nextArrow: $(".slider__next"),
   });
 });
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})

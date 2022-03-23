@@ -60,6 +60,36 @@
   background: #f7f7f7;
 }
 
+@media (max-width: 1024px) {
+  .cards {
+    text-align: center;
+    padding: 70px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .cards__description {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .cards__slider {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .cards__slider .slider__item {
+    margin-right: 0;
+  }
+  .cards .slider__navigation {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .cards__slider {
   position: relative;
 }
@@ -135,26 +165,92 @@
   }
 }
 
-.fresh__woman-img {
-  max-height: 100%;
+@media (max-width: 1024px) {
+  .fresh {
+    padding-left: 0;
+    font-size: calc(24px + 36 * (100vw / 4400));
+  }
+  .fresh__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fresh .fresh__plant {
+    display: none;
+  }
+  .fresh__title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
 
-.fresh__woman-img img {
-  width: 100%;
+.fresh__img-stack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  position: relative;
 }
 
-.fresh__plant-img {
-  max-height: 925px;
+@media (max-width: 1024px) {
+  .fresh__img-stack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fresh__img-stack img {
+    max-width: 100%;
+  }
+  .fresh__img-stack .fresh__women {
+    width: 335px;
+    height: 440px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    z-index: 1;
+  }
+  .fresh__img-stack .fresh__banner {
+    padding-top: 252px;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+  }
 }
 
-.fresh__about-us {
+.fresh__women {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.fresh__banner {
+  grid-column: 6 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 122.8%;
+  z-index: 1;
+}
+
+.fresh__wrapper-for-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
 }
 
 .fresh__banner {
@@ -162,12 +258,11 @@
   padding: 21.5% 150px;
   max-width: 700px;
   max-height: 925px;
-  margin-left: -93px;
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1024px) {
   .fresh__banner {
-    padding: 50px 50px;
+    max-width: initial;
   }
 }
 
@@ -175,7 +270,9 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: calc(18px + 4 * (100vw / 1920));
+  font-size: calc(18px + 4 * (100vw / 2220));
+  font-size: 18px;
+  line-height: 150%;
   line-height: 150%;
   /* or 33px */
   text-align: center;
@@ -202,6 +299,25 @@
   display: flex;
   padding-top: 213px;
   padding-left: 99px;
+}
+
+@media (max-width: 1024px) {
+  .moment {
+    padding: 0 20px;
+    padding-top: 70px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .moment__button {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
 }
 
 .moment__plant {
@@ -233,6 +349,12 @@
   /* or 84px */
   color: #4c604a;
   margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .moment__title {
+    font-size: calc(18px + 24 * (100vw / 1024));
+  }
 }
 
 .moment__text {
