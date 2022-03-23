@@ -9,17 +9,43 @@
     <title>Reviews</title>
   </head>
   <body>
-    <header class="header reviews__header">
-      <div class="navigation">
+    <header class="header home-page__header">
+      <div class="navigation navigation_desck">
         <img src="./img/logo.svg" alt="" srcset="" />
         <nav class="nav">
           <a href="./about.html" class="nav__link">ABOUT</a>
           <a href="./course.html" class="nav__link">THE COURSE</a>
-          <a href="./reviews.html" class="active-link nav__link">REVIEWS</a>
-          <a href="./book.html" class="nav__link nav__link_book-course-link"
+          <a href="./reviews.html" class="nav__link">REVIEWS</a>
+          <a href="" class="nav__link nav__link_book-course-link btn-3"
             >BOOK COURSE</a
           >
         </nav>
+      </div>
+      <div class="navigation_mob">
+        <img class="logo_mobile" src="./img/logo.svg" alt="" srcset="" />
+        <div class="menu__wrap">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu">
+            <nav>
+              <li><a href="./about.html" class="nav__link">ABOUT</a></li>
+              <li><a href="./course.html" class="nav__link">THE COURSE</a></li>
+              <li>
+                <a href="#"
+                  ><a href="./reviews.html" class="nav__link">REVIEWS</a></a
+                >
+              </li>
+              <li>
+                <a href="" class="nav__link nav__link_book-course-link btn-3"
+                  >BOOK COURSE</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <section class="top">
@@ -175,12 +201,17 @@
         </nav>
         <img src="./img/pay-pal.svg" alt="" class="footer__nav__pay-pal" />
       </div>
+      <img src="./img/footer-link.svg" alt="" class="footer__line" />
+
       <button class="book-btn">BOOK THE COURSE</button>
-      <img src="./img/pay-pal.svg" alt="" class="footer__pay-pal_mobile" />
+      <div class="footer__pay-pal_mobile">
+        <img src="./img/pay-pal.svg" alt="" />
+        <img src="./img/logo-mini.svg" alt="" />
+      </div>
       <div class="footer__annotation">
         <p class="footer__text">Made with ❤️️️ ️by DigitalDesign.NYC</p>
         <div class="footer__annotation__links">
-          <a href="" class="footer__annotation__link"
+          <a href="./terms-of-use.html" class="footer__annotation__link"
             >©2021 Elexiris | Terms of Use |</a
           ><a href="" class="footer__annotation__link">Privacy Policy | </a
           ><a href="" class="footer__annotation__link">Accessibility | </a
@@ -190,7 +221,14 @@
         <img src="./img/logo-mini.svg" alt="" class="footer__mini-logo" />
       </div>
     </footer>
-
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      let menu = document.querySelector(".menu");
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/reviews.js"></script>

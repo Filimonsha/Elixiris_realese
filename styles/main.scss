@@ -64,6 +64,10 @@ button {
 }
 .header {
   padding: 20px 55px;
+  @media (max-width:375px) {
+    padding: 20px;
+    
+  }
 }
 .active-link {
   /* Highlight Page */

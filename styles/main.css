@@ -68,6 +68,12 @@ button {
   padding: 20px 55px;
 }
 
+@media (max-width: 375px) {
+  .header {
+    padding: 20px;
+  }
+}
+
 .active-link {
   /* Highlight Page */
   font-family: "Futura" !important;
