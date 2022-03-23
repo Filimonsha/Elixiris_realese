@@ -125,6 +125,12 @@ button {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+@media (max-width: 372px) {
+  .nav__link_book-course-link {
+    padding: 13px 7px;
+  }
+}
+
 .btn-1:focus {
   border: 1px solid #4c604a;
   outline: none;
@@ -161,6 +167,7 @@ button {
 }
 
 .footer {
+  position: relative;
   background: #4c604a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +180,47 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 56px;
+}
+
+.footer__line {
+  display: none;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 376px) {
+  .footer__line {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .footer__nav {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+  }
+  .footer__annotation {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer__pay-pal_mobile {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer .book-btn {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -291,8 +339,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ffffff;
   margin-bottom: 40px;
+}
+
+@media (min-width: 376px) {
+  .footer__nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 .footer__navigation {
@@ -334,7 +387,7 @@ button {
   letter-spacing: 0.3em;
   border: 1px solid #ffffff;
   color: #ffffff;
-  padding: 14px 52px;
+  padding: 14px 51px;
   background: transparent;
   margin-bottom: 40px;
 }
@@ -432,6 +485,12 @@ button {
   margin-bottom: 71px;
 }
 
+@media (max-width: 372px) {
+  .menu li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 .menu .nav__link {
   font-family: "OpenSans";
   font-style: normal;
@@ -456,6 +515,12 @@ button {
   border: 1px solid #4C604A;
   padding: 14px 82px;
   color: #4c604a;
+}
+
+@media (max-width: 372px) {
+  .menu .nav__link_book-course-link {
+    padding: 13px 15px !important;
+  }
 }
 
 .menu__wrap {

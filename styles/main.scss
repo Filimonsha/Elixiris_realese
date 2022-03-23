@@ -106,6 +106,11 @@ button {
     }
   }
 }
+@media (max-width: 372px) {
+  .nav__link_book-course-link {
+    padding: 13px 7px;
+  }
+}
 .btn-1 {
   &:focus {
     border: 1px solid #4c604a;
@@ -143,11 +148,46 @@ button {
 }
 
 .footer {
+  position: relative;
   background: #4c604a;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 56px;
+  &__line {
+    display: none;
+    @media (max-width: 376px) {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+    margin-bottom: 60px;
+  }
+  @media (max-width: 376px) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: block;
+    position: relative;
+    width: 100%;
+    &__nav {
+      padding-right: 20px;
+      padding-left: 20px;
+      border-bottom: none !important;
+      margin-bottom: 0 !important;
+    }
+    &__annotation {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    &__pay-pal_mobile {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .book-btn {
+      margin-right: 18px;
+      margin-left: 18px;
+    }
+  }
   @media (max-width: 1024px) {
     padding: 0 20px;
     padding-top: 60px;
@@ -227,9 +267,15 @@ button {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
-    border-bottom: 1px solid #ffffff;
+    @media (min-width: 376px) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
     margin-bottom: 40px;
   }
+  // &__line{
+  //   position: absolute;
+  // }
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -260,12 +306,13 @@ button {
     font-family: "OpenSans";
     font-style: normal;
     font-weight: 600;
+
     font-size: 17px;
     line-height: 23px;
     letter-spacing: 0.3em;
     border: 1px solid #ffffff;
     color: #ffffff;
-    padding: 14px 52px;
+    padding: 14px 51px;
     background: transparent;
     margin-bottom: 40px;
   }
@@ -338,6 +385,9 @@ button {
   text-align: center;
   li:not(:last-child) {
     margin-bottom: 71px;
+    @media (max-width: 372px) {
+      margin-bottom: 40px;
+    }
   }
   .nav__link {
     font-family: "OpenSans";
@@ -361,13 +411,16 @@ button {
     text-align: center;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    border:1px solid $dark-green;
+    border: 1px solid $dark-green;
     padding: 14px 82px;
 
     color: #4c604a;
+    @media (max-width:372px) {
+      padding: 13px 15px !important;
+    }
   }
 }
-.menu__wrap{
+.menu__wrap {
   z-index: 22;
 }
 .menu.active {

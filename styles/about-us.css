@@ -68,15 +68,32 @@
   max-width: 100%;
 }
 
+@media (max-width: 1440px) {
+  .our-story {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 1024px) {
+  .our-story {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 70px 20px;
+  }
   .our-story__title {
-    margin: 0  auto;
+    margin: 0 auto;
+    padding: 0 !important;
     font-size: 31px !important;
     line-height: 140% !important;
   }
   .our-story__text {
     font-size: 18px !important;
     line-height: 150% !important;
+    margin-bottom: 70px;
   }
 }
 
@@ -115,6 +132,32 @@
   z-index: 1;
 }
 
+@media (max-width: 376px) {
+  .our-story__img-stack {
+    position: relative;
+    margin-bottom: 75px;
+  }
+  .our-story__women {
+    grid-column: 1/ -1;
+  }
+  .our-story__plant {
+    width: 150px;
+    height: 150px;
+    max-height: 150px;
+    padding-top: 0 !important;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / span 7;
+    position: absolute;
+    bottom: -75px;
+    left: 20px;
+  }
+  .our-story__plant img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .little {
   background-image: url("/img/plant-back-about.jpg");
 }
@@ -124,6 +167,17 @@
   max-width: 782px;
   padding: 203px 0;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .little__text {
+    padding-top: 133px;
+    padding-bottom: 160px;
+  }
+  .little__text .text-1 {
+    font-size: 22px !important;
+    line-height: 27px !important;
+  }
 }
 
 .little__text .text-1 {
