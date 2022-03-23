@@ -33,7 +33,6 @@
 @media (max-width: 1024px) {
   .top {
     padding-top: 50px;
-    padding-top: 152px;
   }
   .top__wrapper {
     padding: 0 20px;
@@ -49,6 +48,15 @@
     margin-bottom: 0 !important;
     font-size: 18px !important;
     line-height: 150% !important;
+  }
+}
+
+@media (max-width: 546px) {
+  .top-plant {
+    display: none;
+  }
+  .top-plant_mobile {
+    display: block !important;
   }
 }
 
@@ -171,6 +179,7 @@
 
 @media (max-width: 1024px) {
   .little__text {
+    padding: 0 25px;
     padding-top: 133px;
     padding-bottom: 160px;
   }
