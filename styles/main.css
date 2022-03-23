@@ -458,6 +458,10 @@ button {
   color: #4c604a;
 }
 
+.menu__wrap {
+  z-index: 22;
+}
+
 .menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
