@@ -67,21 +67,18 @@ header {
 
 /* Acordeon styles */
 .questions {
-  min-height: 1079px;
   padding: 100px 20px;
 }
 
 @media (max-width: 1024px) {
   .questions {
     padding: 70px 20px;
-    min-height: 1040px;
   }
 }
 
 @media (max-width: 404px) {
   .questions {
     padding: 70px 20px;
-    min-height: 1100px;
   }
 }
 
@@ -293,8 +290,8 @@ header {
 
 @media (max-width: 440px) {
   .company-value .company-value__wrapp {
-    -ms-grid-rows: 475px 1fr;
-        grid-template-rows: 475px 1fr;
+    -ms-grid-rows: 475px auto;
+        grid-template-rows: 475px auto;
   }
   .company-value__img-stack {
     display: none;
@@ -342,8 +339,8 @@ header {
 .company-value__wrapp {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 490px) 1fr;
-      grid-template-columns: minmax(300px, 490px) 1fr;
+  -ms-grid-columns: minmax(300px, 490px) auto;
+      grid-template-columns: minmax(300px, 490px) auto;
   gap: 15.3%;
 }
 
@@ -382,8 +379,8 @@ header {
     gap: 70px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
   }
   .company-value__wrapp .company-value__titile {
     font-size: 31px !important;
@@ -397,7 +394,16 @@ header {
     line-height: 150%;
   }
   .company-value__wrapp .company__value__button {
-    padding: 14px 82px;
+    padding: 14px 0px;
+  }
+  .company-value__wrapp .company-value__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -553,5 +559,83 @@ header {
   line-height: 150%;
   /* or 33px */
   color: #555555;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion__container:nth-child(1) {
+  border-top: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .panel {
+    font-size: 18px !important;
+  }
+  .accordion {
+    font-size: 20px !important;
+  }
+}
+
+.accordion__container {
+  position: relative;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+.accordion__container .panel {
+  padding-bottom: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  color: #000000;
+  opacity: 0.6;
+}
+
+.accordion {
+  padding: 30px 20px;
+  padding-right: 50px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  /* Text2 */
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  color: #000000;
+}
+
+.accordion__svg {
+  position: relative;
+  position: absolute;
+  right: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.active svg path {
+  d: path("M9.3667 20C9.3667 19.7239 9.59056 19.5 9.8667 19.5H30.1334C30.4095 19.5 30.6334 19.7239 30.6334 20C30.6334 20.2761 30.4095 20.5 30.1334 20.5H9.8667C9.59056 20.5 9.3667 20.2761 9.3667 20Z");
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 /*# sourceMappingURL=course.css.map */

@@ -62,15 +62,15 @@ header {
 }
 /* Acordeon styles */
 .questions {
-  min-height: 1079px;
+  // min-height: 1079px;
   padding: 100px 20px;
   @media (max-width: 1024px) {
     padding: 70px 20px;
-    min-height: 1040px;
+    // min-height: 1040px;
   }
   @media (max-width: 404px) {
     padding: 70px 20px;
-    min-height: 1100px;
+    // min-height: 1100px;
   }
 }
 .tab {
@@ -256,7 +256,7 @@ header {
   }
   @media (max-width: 440px) {
     .company-value__wrapp {
-      grid-template-rows: 475px 1fr;
+      grid-template-rows: 475px auto;
       // gap: 145px;
     }
     &__img-stack {
@@ -297,7 +297,7 @@ header {
 
 .company-value__wrapp {
   display: grid;
-  grid-template-columns: minmax(300px, 490px) 1fr;
+  grid-template-columns: minmax(300px, 490px) auto;
   gap: 15.3%;
   .company-value__titile {
     font-size: 60px;
@@ -313,7 +313,7 @@ header {
   }
 
   .company__value__button {
-    background:transparent;
+    background: transparent;
     margin-top: 40px;
     color: $dark-green;
     font-family: "OpenSans";
@@ -326,10 +326,11 @@ header {
     padding: 13px 25px;
     border: 1px solid $dark-green;
   }
+  
   @media (max-width: 1024px) {
     gap: 70px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     .company-value__titile {
       font-size: 31px !important;
       margin-bottom: 30px;
@@ -342,7 +343,11 @@ header {
       line-height: 150%;
     }
     .company__value__button {
-      padding: 14px 82px;
+      padding: 14px 0px;
+    }
+    .company-value__desc{
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -385,7 +390,7 @@ header {
 .promise {
   padding: 150px 20px;
   background-image: url("/img/course-back.png");
-  background-position:center;
+  background-position: center;
   @media (max-width: 1024px) {
     padding: 70px 20px;
     .item__text {
@@ -470,4 +475,84 @@ header {
 
     color: #555555;
   }
+}
+
+// Второй аккардеон
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion__container:nth-child(1) {
+  border-top: 1px solid rgba(85, 85, 85, 0.3);
+}
+@media (max-width:1024px) {
+  .panel{
+    font-size: 18px !important;
+  }
+  .accordion{
+    font-size: 20px !important;
+  }
+}
+.accordion__container {
+
+  .panel {
+    padding-bottom: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    /* identical to box height, or 33px */
+
+    color: #000000;
+
+    opacity: 0.6;
+  }
+  position: relative;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.3);
+}
+.accordion {
+  &__svg {
+    position: relative;
+    position: absolute;
+    right: 20px;
+    transition: all 0.3s;
+  }
+  padding: 30px 20px;
+  padding-right: 50px;
+  border: none;
+
+  background-color: $white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  /* Text2 */
+
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+
+  color: #000000;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  svg {
+    transform: rotate(180deg);
+    path {
+      d: path(
+        "M9.3667 20C9.3667 19.7239 9.59056 19.5 9.8667 19.5H30.1334C30.4095 19.5 30.6334 19.7239 30.6334 20C30.6334 20.2761 30.4095 20.5 30.1334 20.5H9.8667C9.59056 20.5 9.3667 20.2761 9.3667 20Z"
+      );
+    }
+  }
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
