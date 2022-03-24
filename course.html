@@ -200,10 +200,12 @@
               The Elixiris course provides significant value. It presents the
               opportunity of resolving all your asthma symptoms and becoming
               free of any asthma medication.
+              <br /><br />
             </p>
             <span class="company-value__span text-2">
               Our experience has shown that the Elixiris process works
               successfully in every case.
+              <br /><br />
             </span>
             <p class="company-value__text text-1">
               Results are seen generally within the first week or two, although
@@ -213,6 +215,7 @@
               <br />
               The Elixiris course is a 4 week course that consists of one hour a
               week.
+              <br /><br />
             </p>
             <span class="company-value__span text-2">
               The total cost is 995.00 USD
@@ -257,6 +260,126 @@
           </p>
         </div>
       </section>
+      <section class="promise">
+        <div class="container promise__container">
+          <h1 class="promise__title main-title">Our Promise</h1>
+          <div class="promise__list">
+            <div class="promise__item">
+              <span class="numeration">01</span>
+              <div class="item__wrap">
+                <h4 class="item__title">No Supplements</h4>
+                <p class="item__text">
+                  Just honest to goodness ingredients you can source right where
+                  you live.
+                </p>
+              </div>
+            </div>
+            <div class="promise__item">
+              <span class="numeration">02</span>
+              <div class="item__wrap">
+                <h4 class="item__title">No Breathing Exercises</h4>
+                <p class="item__text">
+                  There is no need to think about your breathing more than you
+                  do, or be reminded how you cannot breathe well.
+                </p>
+              </div>
+            </div>
+            <div class="promise__item">
+              <span class="numeration">03</span>
+              <div class="item__wrap">
+                <h4 class="item__title">No Pseudoscience</h4>
+                <p class="item__text">
+                  There is no energy healing, hypnotism or ‘mind control.’ We
+                  encourage you to be in possession of your faculties at all
+                  times, and improve upon them.
+                </p>
+              </div>
+            </div>
+            <div class="promise__item">
+              <span class="numeration">04</span>
+              <div class="item__wrap">
+                <h4 class="item__title">No Appendages</h4>
+                <p class="item__text">
+                  Our process does not use any breathing equipment, devices or
+                  appendages such as mouth tape. There is no need to tape your
+                  mouth closed when you are already finding it difficult to
+                  breathe through your nose and mouth, especially at night.
+                </p>
+              </div>
+            </div>
+            <div class="promise__item">
+              <span class="numeration">05</span>
+              <div class="item__wrap">
+                <h4 class="item__title">No Ongoing Cost</h4>
+                <p class="item__text">
+                  Just the cost of the one-time course. We expect the Elixiris
+                  process will save you the cost of many inhalers, biologic
+                  injections, missed work days and adverse side effects from
+                  medication in the future.
+                </p>
+              </div>
+            </div>
+            <div class="promise__item">
+              <span class="numeration">06</span>
+              <div class="item__wrap">
+                <h4 class="item__title">
+                  No Invasive Medical or Non Medical Treatments
+                </h4>
+                <p class="item__text">
+                  There is no bronchial thermoplasty, acupuncture, homeopathy
+                  involving toxic ingredients, ingestion of colloidal silver or
+                  hydrogen peroxide, or vaporization of colloidal silver,
+                  hydrogen peroxide, salt, herbs or essential oils or other
+                  substance. The Elixiris process is a gentle process that is
+                  truly safe and healthy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer home-page__footer">
+      <div class="footer__nav">
+        <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" />
+        <nav class="footer__navigation">
+          <a href="" class="footer__link">ABOUT</a
+          ><a href="" class="footer__link">THE COURSE</a
+          ><a href="" class="footer__link">REVIEWS</a>
+        </nav>
+        <img src="./img/pay-pal.svg" alt="" class="footer__nav__pay-pal" />
+      </div>
+      <img src="./img/footer-link.svg" alt="" class="footer__line" />
+
+      <button class="book-btn">BOOK THE COURSE</button>
+      <div class="footer__pay-pal_mobile">
+        <img src="./img/pay-pal.svg" alt="" />
+        <img src="./img/logo-mini.svg" alt="" />
+      </div>
+      <div class="footer__annotation">
+        <p class="footer__text">Made with ❤️️️ ️by DigitalDesign.NYC</p>
+        <div class="footer__annotation__links">
+          <a href="./terms-of-use.html" class="footer__annotation__link"
+            >©2021 Elexiris | Terms of Use |</a
+          ><a href="" class="footer__annotation__link">Privacy Policy | </a
+          ><a href="" class="footer__annotation__link">Accessibility | </a
+          ><a href="" class="footer__annotation__link">Site Map | </a
+          ><a href="" class="footer__annotation__link">Contact</a>
+        </div>
+        <img src="./img/logo-mini.svg" alt="" class="footer__mini-logo" />
+      </div>
+    </footer>
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      let menu = document.querySelector(".menu");
+      let body = document.querySelector("body");
+      console.log(body);
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("active");
+        menu.classList.toggle("active");
+        body.classList.toggle("body-overflow-h");
+      });
+    </script>
   </body>
 </html>
