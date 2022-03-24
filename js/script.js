@@ -12,7 +12,7 @@ $(document).ready(function () {
       },
 
       {
-        breakpoint: 1440,
+        breakpoint: 1640,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
