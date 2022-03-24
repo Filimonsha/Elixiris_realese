@@ -7,6 +7,10 @@
   padding-top: 152px;
 }
 
+.top .top-plant_mobile {
+  display: none;
+}
+
 .top img {
   max-width: 100%;
   position: relative;
