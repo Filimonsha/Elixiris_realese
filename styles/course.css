@@ -331,7 +331,7 @@ header {
 @media (max-width: 374px) {
   .company-value .company-value__plant__mobile {
     width: 100%;
-    height: initial;
+    /* height: initial; */
     max-width: 100%;
   }
 }

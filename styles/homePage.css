@@ -333,6 +333,13 @@
   display: flex;
 }
 
+@media (max-width: 376px) {
+  .fresh {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+}
+
 .fresh__banner {
   background: #4c604a;
   padding: 21.5% 150px;

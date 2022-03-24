@@ -519,11 +519,15 @@
 
     <footer class="footer home-page__footer">
       <div class="footer__nav">
-        <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" />
+        <picture>
+          <source srcset="./img/footer-logo-mobile.svg" media="(max-width: 1024px)" />
+          <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" />
+        </picture>
+        <!-- <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" /> -->
         <nav class="footer__navigation">
-          <a href="" class="footer__link">ABOUT</a
-          ><a href="" class="footer__link">THE COURSE</a
-          ><a href="" class="footer__link">REVIEWS</a>
+          <a href="./about.html" class="footer__link">ABOUT</a
+          ><a href="./course.html" class="footer__link">THE COURSE</a
+          ><a href="./reviews.html" class="footer__link">REVIEWS</a>
         </nav>
         <img src="./img/pay-pal.svg" alt="" class="footer__nav__pay-pal" />
       </div>
@@ -542,7 +546,7 @@
           ><a href="" class="footer__annotation__link">Privacy Policy | </a
           ><a href="" class="footer__annotation__link">Accessibility | </a
           ><a href="" class="footer__annotation__link">Site Map | </a
-          ><a href="" class="footer__annotation__link">Contact</a>
+          ><a href="./contact.html" class="footer__annotation__link">Contact</a>
         </div>
         <img src="./img/logo-mini.svg" alt="" class="footer__mini-logo" />
       </div>
