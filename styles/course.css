@@ -74,7 +74,14 @@ header {
 @media (max-width: 1024px) {
   .questions {
     padding: 70px 20px;
-    min-height: 950px;
+    min-height: 1040px;
+  }
+}
+
+@media (max-width: 404px) {
+  .questions {
+    padding: 70px 20px;
+    min-height: 1100px;
   }
 }
 
@@ -213,7 +220,12 @@ header {
 }
 
 .company-value {
+  background: #f6f6f6;
   padding-left: 240px;
+}
+
+.company-value__img-stack_mobile {
+  display: none;
 }
 
 .company-value img {
@@ -280,12 +292,17 @@ header {
 
 @media (max-width: 440px) {
   .company-value .company-value__wrapp {
-    gap: 145px;
+    -ms-grid-rows: 475px 1fr;
+        grid-template-rows: 475px 1fr;
   }
   .company-value__img-stack {
     display: none;
   }
   .company-value__img-stack_mobile {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: 475px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +320,7 @@ header {
     width: 150px;
     height: 150px;
     position: absolute;
-    bottom: -75px;
+    bottom: 0;
     left: 20px;
   }
   .company-value__img-stack_mobile .company-value__plant__mobile {
@@ -328,5 +345,47 @@ header {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
+}
+
+.description {
+  padding: 150px 20px;
+}
+
+@media (max-width: 1024px) {
+  .description {
+    padding: 70px 0;
+    gap: 70px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .description__short-text {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .description__long-text {
+    font-size: 18px !important;
+  }
+}
+
+.description .description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description__short-text {
+  max-width: 483px;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+}
+
+.description__long-text {
+  max-width: 700px;
 }
 /*# sourceMappingURL=course.css.map */

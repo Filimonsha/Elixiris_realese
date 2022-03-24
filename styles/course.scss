@@ -66,7 +66,11 @@ header {
   padding: 100px 20px;
   @media (max-width: 1024px) {
     padding: 70px 20px;
-    min-height: 950px;
+    min-height: 1040px;
+  }
+  @media (max-width: 404px) {
+    padding: 70px 20px;
+    min-height: 1100px;
   }
 }
 .tab {
@@ -203,6 +207,10 @@ header {
 
 // value
 .company-value {
+  background: #f6f6f6;
+  &__img-stack_mobile {
+    display: none;
+  }
   padding-left: 240px;
   img {
     // max-height: 100%;
@@ -247,12 +255,15 @@ header {
   }
   @media (max-width: 440px) {
     .company-value__wrapp {
-      gap: 145px;
+      grid-template-rows: 475px 1fr;
+      // gap: 145px;
     }
     &__img-stack {
       display: none;
     }
     &__img-stack_mobile {
+      justify-content: start;
+      height: 475px;
       position: relative;
       img {
         width: 100%;
@@ -264,7 +275,7 @@ header {
         width: 150px;
         height: 150px;
         position: absolute;
-        bottom: -75px;
+        bottom: 0;
         left: 20px;
       }
       .company-value__plant__mobile {
@@ -282,5 +293,35 @@ header {
     gap: 70px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+}
+// desc
+.description {
+  padding:  150px 20px;
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+    gap: 70px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    &__short-text {
+      font-size: 20px;
+      line-height: 150%;
+    }
+    &__long-text {
+      font-size: 18px !important;
+    }
+  }
+  .description__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__short-text {
+    max-width: 483px;
+    font-size: 28px;
+    line-height: 150%;
+    /* or 42px */
+  }
+  &__long-text {
+    max-width: 700px;
   }
 }
