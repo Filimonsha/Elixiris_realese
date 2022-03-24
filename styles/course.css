@@ -1,1 +1,332 @@
-/* No CSS *//*# sourceMappingURL=course.css.map */
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+header {
+  background-color: #E5ECE4;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.top {
+  background: #E5ECE4;
+  padding-top: 152px;
+}
+
+.top img {
+  max-width: 100%;
+  position: relative;
+  bottom: -5px;
+}
+
+.top__wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+}
+
+.top__h1 {
+  color: #4C604A;
+  margin-bottom: 40px;
+}
+
+.top__text {
+  margin-bottom: 136px;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .top {
+    padding-top: 50px;
+  }
+  .top__wrapper {
+    padding: 0 20px;
+    padding-bottom: 70px;
+    text-align: center;
+    max-width: 900px;
+  }
+  .top__h1 {
+    font-size: 31px !important;
+    line-height: 140% !important;
+  }
+  .top__text {
+    margin-bottom: 0 !important;
+    font-size: 18px !important;
+    line-height: 150% !important;
+  }
+}
+
+.half {
+  float: left;
+  width: 100%;
+}
+
+/* Acordeon styles */
+.questions {
+  min-height: 1079px;
+  padding: 100px 20px;
+}
+
+@media (max-width: 1024px) {
+  .questions {
+    padding: 70px 20px;
+    min-height: 950px;
+  }
+}
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+.tab:nth-child(1) {
+  border-top: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 30px;
+  background: #FFFFFF;
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .tab label {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #FFFFFF;
+  -webkit-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+
+.tab-content p {
+  padding: 0 20px;
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  color: #000000;
+  opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+  .tab-content p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    color: #000000;
+    opacity: 0.6;
+  }
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+@media (max-width: 1024px) {
+  .tab label::after {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.tab__svg {
+  position: absolute;
+  right: 0;
+}
+
+.tab input[type="checkbox"] + label::after {
+  top: 0;
+  content: "";
+  background-image: url("/img/accordion-plus.svg");
+}
+
+@media (max-width: 1024px) {
+  .tab input[type="checkbox"] + label::after {
+    background-image: url("/img/accordion-plus-mobile.svg");
+  }
+}
+
+.tab input[type="radio"] + label::after {
+  content: "\25BC";
+}
+
+.tab input[type="checkbox"]:checked + label::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("/img/accordion-minus.svg");
+}
+
+@media (max-width: 1024px) {
+  .tab input[type="checkbox"]:checked + label::after {
+    background-image: url("/img/accordion-minus-mobile.svg");
+  }
+}
+
+.company-value {
+  padding-left: 240px;
+}
+
+.company-value img {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .company-value {
+    padding: 70px 20px;
+  }
+}
+
+.company-value__img-stack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+
+.company-value__women {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / span 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  z-index: 1;
+}
+
+.company-value__plant {
+  grid-column: 4 / -1;
+  grid-row: 1/ -1;
+}
+
+@media (max-width: 1024px) {
+  .company-value__img-stack {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+  }
+  .company-value__women {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2 / span 5;
+    grid-row: 4 / -1;
+    z-index: 1;
+  }
+  .company-value__plant {
+    grid-column: 1 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1 / span 5;
+  }
+}
+
+@media (max-width: 440px) {
+  .company-value .company-value__wrapp {
+    gap: 145px;
+  }
+  .company-value__img-stack {
+    display: none;
+  }
+  .company-value__img-stack_mobile {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .company-value__img-stack_mobile img {
+    width: 100%;
+    height: 100%;
+  }
+  .company-value__img-stack_mobile .company-value__women__mobile {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -75px;
+    left: 20px;
+  }
+  .company-value__img-stack_mobile .company-value__plant__mobile {
+    width: 335px;
+    height: 400px;
+  }
+}
+
+.company-value__wrapp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 490px) 1fr;
+      grid-template-columns: minmax(300px, 490px) 1fr;
+  gap: 15.3%;
+}
+
+@media (max-width: 1024px) {
+  .company-value__wrapp {
+    gap: 70px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=course.css.map */
