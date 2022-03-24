@@ -49,6 +49,15 @@
   color: #ffffff;
 }
 
+@media (max-width: 1024px) {
+  .banner {
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+
 .cards {
   position: relative;
   padding-top: 125px;
