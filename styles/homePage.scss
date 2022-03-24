@@ -44,15 +44,21 @@
     cursor: pointer;
     color: #ffffff;
   }
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     text-align: center;
     padding: 0 20px;
     padding-top: 50px;
     padding-bottom: 70px;
-
   }
 }
-
+@media (max-width: 460px) and (min-width: 400px) {
+  .cards {
+    padding: 70px 32px !important;
+  }
+  .slick-slide{
+    margin-right: 10px;
+  }
+}
 .cards {
   position: relative;
   padding-top: 125px;
@@ -165,7 +171,6 @@
       display: none;
     }
     &__title {
-      
       padding: 0;
       margin: 0 auto;
       margin-bottom: 30px;
