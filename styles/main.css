@@ -557,4 +557,8 @@ button {
   -webkit-transform: translate(-50%, 0%) rotate(-45deg);
           transform: translate(-50%, 0%) rotate(-45deg);
 }
+
+.body-overflow-h {
+  overflow: hidden;
+}
 /*# sourceMappingURL=main.css.map */
