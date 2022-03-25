@@ -219,7 +219,7 @@ header {
 .company-value {
   padding: 150px 0px;
   background: #f6f6f6;
-  padding-left: 240px;
+  padding-left: 12.5%;
 }
 
 .company-value__img-stack_mobile {
@@ -331,7 +331,7 @@ header {
 @media (max-width: 374px) {
   .company-value .company-value__plant__mobile {
     width: 100%;
-    /* height: initial; */
+    height: initial;
     max-width: 100%;
   }
 }
@@ -408,7 +408,11 @@ header {
 }
 
 .description {
-  padding: 150px 20px;
+  padding: 150px 12.5%;
+}
+
+.description__short-text {
+  margin-right: 255px;
 }
 
 @media (max-width: 1024px) {
@@ -423,6 +427,7 @@ header {
   .description__short-text {
     font-size: 20px !important;
     line-height: 150%;
+    margin-right: 0;
     margin-bottom: 30px;
   }
   .description__long-text {
@@ -440,9 +445,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .description__short-text {
