@@ -8,9 +8,15 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"),
-    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype"),
+    url("/fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype"),
+    url("/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
 }
 
 @font-face {
@@ -151,6 +157,19 @@ button {
   }
 }
 
+.btn-1 {
+  background: #69a561;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  border:none;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
 .btn-1:focus {
   border: 1px solid #4c604a;
   outline: none;
