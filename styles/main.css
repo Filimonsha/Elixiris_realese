@@ -165,17 +165,22 @@ button {
   }
 }
 
+.btn-1:active, .btn-3:active, .btn-2:active {
+  -webkit-transform: scaleY(95%);
+          transform: scaleY(95%);
+}
+
 .btn-1:focus {
   border: 1px solid #4c604a;
   outline: none;
 }
 
-.btn-1:active {
-  -webkit-transform: scaleY(95%);
-          transform: scaleY(95%);
+.btn-3:hover {
+  color: #ffffff !important;
+  background-color: #4c604a !important;
 }
 
-.btn-3:hover {
+.btn-1:hover {
   color: #ffffff !important;
   background-color: #4c604a !important;
 }
