@@ -58,6 +58,10 @@
   display: none;
 }
 @media (max-width: 376px) {
+  img{
+    max-width: 75px;
+    max-height: 75px;
+  }
   .top-plant {
     display: none;
   }
