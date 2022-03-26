@@ -1,13 +1,31 @@
+.plant-mobile {
+  background: #e5ece4;
+  display: none;
+}
+
+.plant-mobile img {
+  max-width: 64%;
+}
+
 .banner {
   padding-left: 12.5%;
   padding-top: 220px;
   padding-bottom: 262px;
   background: #e5ece4;
+  background-image: url("/img/home-page-back.png");
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
 .banner__wrapper {
   max-width: 761px;
+}
+
+@media (max-width: 1837px) and (min-width: 1025px) {
+  .banner__wrapper {
+    max-width: 42%;
+  }
 }
 
 .banner__titile {
@@ -51,6 +69,7 @@
 
 @media (max-width: 1024px) {
   .banner {
+    background: #f0f5ef;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -61,6 +80,17 @@
     padding: 0 20px;
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .plant-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 

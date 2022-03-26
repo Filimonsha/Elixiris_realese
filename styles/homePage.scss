@@ -1,12 +1,26 @@
+.plant-mobile {
+  background: #e5ece4;
+  img {
+    max-width: 64%;
+  }
+  display: none;
+}
+
 .banner {
   padding-left: 12.5%;
   padding-top: 220px;
   padding-bottom: 262px;
   background: #e5ece4;
-  // background-image:url('/img/home-page-banner.png');
+  background-image: url("/img/home-page-back.png");
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
+
   &__wrapper {
     max-width: 761px;
+    @media (max-width: 1837px) and (min-width: 1025px) {
+      max-width: 42%;
+    }
   }
   &__titile {
     font-family: "OpenSans";
@@ -45,12 +59,19 @@
     color: #ffffff;
   }
   @media (max-width: 1024px) {
+    background: #f0f5ef;
     justify-content: center;
     display: flex;
     text-align: center;
     padding: 0 20px;
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  .plant-mobile {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 460px) and (min-width: 400px) {
@@ -243,8 +264,8 @@
     width: 100%;
     justify-content: space-between;
   }
-  .fresh{
-    img{
+  .fresh {
+    img {
       width: 100%;
     }
   }
@@ -419,5 +440,15 @@
     * {
       max-width: 100%;
     }
+  }
+}
+
+// For buttons
+.pressed svg {
+  path {
+    fill: $white;
+  }
+  circle {
+    fill: $light-green;
   }
 }

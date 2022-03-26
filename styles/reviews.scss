@@ -6,7 +6,7 @@
   background: $super-light-green;
 }
 .top {
-  .top-plant_mobile{
+  .top-plant_mobile {
     display: none;
   }
   background: $super-light-green;
@@ -54,26 +54,32 @@
   }
 }
 @media (max-width: 376px) {
-  .top-plant{
+  .top-plant {
     display: none;
   }
-  .top-plant_mobile{
+  .top-plant_mobile {
     display: block !important;
   }
   .reviews__author {
     width: 75px;
     height: 75px;
   }
-  .reviews__comma{
+  .reviews__comma {
     width: 20px;
     height: 17.5px;
   }
-  .reviews{
-    padding-top: 70px  !important;
+  .reviews {
+    padding-top: 70px !important;
     padding-bottom: 70px !important;
+  }
+  .reviews__slider__item {
+    grid-template-rows: 105px 1fr !important;
   }
 }
 @media (max-width: 1024px) {
+  .reviews__slider__item {
+    grid-template-rows: 155px 1fr;
+  }
   .reviews__author {
     max-width: 150px;
     max-height: 150px;
@@ -115,25 +121,32 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr !important;
+
     column-gap: 125px;
   }
 }
-.reviews__navigation{
+.reviews__navigation {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
--webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
   outline: none;
+}
+.reviews__review-wrap__content {
+  padding-top: 33px;
 }
 .reviews {
   padding-top: 150px;
   padding-bottom: 141px;
-
+  &__img {
+    border-radius: 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   &__wrap {
     max-width: 1225px;
     margin: 0 auto;
     position: relative;
   }
   &__title {
-    padding-top: 33px;
+    // padding-top: 33px;
     font-size: 28px;
     line-height: 150%;
     /* or 42px */
@@ -150,12 +163,21 @@
     margin-bottom: 59px;
   }
   img {
-    max-width: 100%;
+    // max-width: 100%;
+    object-fit: cover;
   }
   &__author {
     position: relative;
   }
-  &__comma {
+  &__img {
+    width: 150px;
+    height: 150px;
+    @media (max-width:375px) {
+          width: 75px;
+    height: 75px;
+    }
+  }
+  & &__comma {
     position: absolute;
     top: 0;
     right: 0;
@@ -245,7 +267,17 @@
 }
 
 .reviews__navigation {
-  svg:hover {
+  @media (min-width: 1024px) {
+    svg:hover {
+      path {
+        fill: $white;
+      }
+      circle {
+        fill: $light-green;
+      }
+    }
+  }
+  svg:active {
     path {
       fill: $white;
     }

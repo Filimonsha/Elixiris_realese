@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(".slider").slick({
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 800,
@@ -15,7 +15,7 @@ $(document).ready(function () {
         breakpoint: 1640,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -33,3 +33,12 @@ menuBtn.addEventListener("click", function () {
   menu.classList.toggle("active");
   body.classList.toggle("body-overflow-h");
 });
+
+// let prevNav = document.querySelector(".slider__prev");
+// let nextNav = document.querySelector(".slider__next");
+// prevNav.addEventListener('click',function(){
+//     prevNav.classList.add("pressed")
+//     setTimeout(function(){
+//       prevNav.classList.remove("pressed")
+//     },2000)
+// })

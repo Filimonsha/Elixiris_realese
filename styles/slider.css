@@ -41,11 +41,20 @@
   right: 320px;
 }
 
-.slider__navigation svg:hover path {
+@media (min-width: 1024px) {
+  .slider__navigation svg:hover path {
+    fill: #FFFFFF;
+  }
+  .slider__navigation svg:hover circle {
+    fill: #688C63;
+  }
+}
+
+.slider__navigation svg:active path {
   fill: #FFFFFF;
 }
 
-.slider__navigation svg:hover circle {
+.slider__navigation svg:active circle {
   fill: #688C63;
 }
 
@@ -80,7 +89,7 @@
   padding: 0 25px;
   padding-top: 350px;
   padding-bottom: 52px;
-  background: #FFFFFF;
+  background: #ffffff;
   background-repeat: no-repeat;
 }
 
