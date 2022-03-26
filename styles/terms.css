@@ -3,10 +3,21 @@
 }
 
 .main {
-  padding: 100px 0;
-  text-align: center;
+  padding: 100px 60px;
   max-width: 1010px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 70px 20px;
+  }
+  .main__title {
+    font-size: 31px !important;
+  }
+  .main__text {
+    font-size: 14px !important;
+  }
 }
 
 .main__title {
@@ -24,5 +35,10 @@
   line-height: 140%;
   /* or 25px */
   color: #555555;
+}
+
+.main-container {
+  max-width: 1010px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=terms.css.map */

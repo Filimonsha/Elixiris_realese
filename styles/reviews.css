@@ -1,3 +1,8 @@
+.main-container {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
 .reviews__header {
   background: #E5ECE4;
 }
