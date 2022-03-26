@@ -67,7 +67,7 @@ header {
 
 /* Acordeon styles */
 .questions {
-  padding: 100px 20px;
+  padding: 150px 12.5%;
 }
 
 @media (max-width: 1024px) {
@@ -411,6 +411,11 @@ header {
   padding: 150px 12.5%;
 }
 
+.description__long-text {
+  font-size: 22px;
+  line-height: 150%;
+}
+
 .description__short-text {
   margin-right: 255px;
 }
@@ -445,6 +450,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .description__short-text {
@@ -459,7 +467,7 @@ header {
 }
 
 .promise {
-  padding: 150px 20px;
+  padding: 150px 12.5%;
   background-image: url("/img/course-back.png");
   background-position: center;
 }
@@ -490,6 +498,10 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .promise__list {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
 }
 
 .promise__list {
@@ -515,7 +527,7 @@ header {
 }
 
 .promise .numeration {
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
@@ -531,6 +543,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 503px;
 }
 
 .promise .item__wrap {

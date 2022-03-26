@@ -115,6 +115,12 @@
     padding-top: 122.8%; // 593 this pushes the image down, and keeps it proportional as it resizes
     z-index: 1; // make this image render on top of the bottom
   }
+  @media (min-width: 2200px){
+    &__plant{
+          grid-column: -16 / span 7;
+
+    }
+  }
   @media (max-width: 376px) {
     &__img-stack {
       position: relative;

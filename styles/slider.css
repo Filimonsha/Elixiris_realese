@@ -9,7 +9,14 @@
 }
 
 .slider__item {
+  min-width: 370px;
   max-width: 380px;
+}
+
+@media (max-width: 1024px) {
+  .slider__item {
+    min-width: 0;
+  }
 }
 
 /* Слайдер запущен */

@@ -144,6 +144,12 @@
   z-index: 1;
 }
 
+@media (min-width: 2200px) {
+  .our-story__plant {
+    grid-column: -16 / span 7;
+  }
+}
+
 @media (max-width: 376px) {
   .our-story__img-stack {
     position: relative;

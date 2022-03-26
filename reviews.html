@@ -58,7 +58,11 @@
           you.
         </p>
       </div>
-      <img src="./img/reviews-plant-,obile.jpg" alt="" class="top-plant_mobile">
+      <img
+        src="./img/reviews-plant-,obile.jpg"
+        alt=""
+        class="top-plant_mobile"
+      />
       <img src="./img/reviews-plant.jpg" alt="" class="top-plant" />
     </section>
     <section class="reviews">
@@ -196,7 +200,7 @@
       <div class="footer__nav">
         <picture>
           <source srcset="./img/footer-logo-mobile.svg" media="(max-width: 1024px)" />
-          <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" />
+          <img src="./img/footer-logo-mobile.svg" alt="" class="footer__nav__logo" />
         </picture>
         <!-- <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" /> -->
         <nav class="footer__navigation">
@@ -208,7 +212,7 @@
       </div>
       <img src="./img/footer-link.svg" alt="" class="footer__line" />
 
-      <button class="book-btn">BOOK THE COURSE</button>
+      <button class="book-btn">BOOK  THE COURSE</button>
       <div class="footer__pay-pal_mobile">
         <img src="./img/pay-pal.svg" alt="" />
         <img src="./img/logo-mini.svg" alt="" />
@@ -229,15 +233,16 @@
     <script>
       let menuBtn = document.querySelector(".menu-btn");
       let menu = document.querySelector(".menu");
-      let body = document.querySelector('body');
-      console.log(body)
+      let body = document.querySelector("body");
+      console.log(body);
       menuBtn.addEventListener("click", function () {
         menuBtn.classList.toggle("active");
         menu.classList.toggle("active");
-        body.classList.toggle("body-overflow-h")
+        body.classList.toggle("body-overflow-h");
       });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/reviews.js"></script>
   </body>
 </html>

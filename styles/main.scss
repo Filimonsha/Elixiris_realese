@@ -1,28 +1,39 @@
 @import "__variables.scss";
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Regular.ttf") format("truetype"),
-    url("/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype"), url("/fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"),
-    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Light.ttf") format("truetype"),
-    url("/fonts//Montserrat-Light.woff") format("woff");
+  src: url("/fonts/Montserrat-Light.ttf") format("truetype"), url("/fonts//Montserrat-Light.woff") format("woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "OpenSans";
-  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"),
-    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype"), url("/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura-Medium-01.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura-Bold-03.ttf") format("truetype");
+  font-weight: 700;
 }
 * {
   box-sizing: border-box;
@@ -62,23 +73,20 @@ button {
   font-weight: 300;
   color: #787878;
 }
-.text-2{
-  font-family: 'Futura';
-font-style: normal;
-font-weight: 500;
-/* or 42px */
+.text-2 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  /* or 42px */
 
+  /* Текст(серый) */
 
-/* Текст(серый) */
-
-color: #787878;
-
+  color: #787878;
 }
 .header {
   padding: 20px 55px;
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     padding: 20px;
-    
   }
 }
 .active-link {
@@ -133,14 +141,14 @@ color: #787878;
     // padding: +3px;
     outline: none;
   }
-  &:hover {
-    color: #ffffff !important;
-
-    background: $dark-green;
-  }
   &:active {
     transform: scaleY(95%);
   }
+}
+.btn-3:hover {
+  color: #ffffff !important;
+
+  background-color: #4c604a !important;
 }
 .btn-2 {
   &:hover {
@@ -152,6 +160,14 @@ color: #787878;
     transform: scaleY(95%);
   }
 }
+.book-btn:hover {
+  color: black !important;
+
+  background: $white !important;
+}
+.book-btn:active {
+    transform: scaleY(95%);
+  }
 .btn-3 {
   &:hover {
     color: #ffffff !important;
@@ -432,7 +448,7 @@ color: #787878;
     padding: 14px 82px;
 
     color: #4c604a;
-    @media (max-width:372px) {
+    @media (max-width: 372px) {
       padding: 13px 15px !important;
     }
   }
@@ -457,5 +473,20 @@ color: #787878;
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
 }
-.body-overflow-h{
-  overflow:hidden;}
+.body-overflow-h {
+  overflow: hidden;
+}
+
+@media (max-width: 373px) {
+  .book-btn {
+    padding: 14px 5px !important;
+    align-self: normal;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+}
+.top img {
+  width: 100%;
+}

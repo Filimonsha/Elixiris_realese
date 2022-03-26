@@ -63,7 +63,9 @@ header {
 /* Acordeon styles */
 .questions {
   // min-height: 1079px;
-  padding: 100px 20px;
+
+  padding: 150px 12.5%;
+
   @media (max-width: 1024px) {
     padding: 70px 20px;
     // min-height: 1040px;
@@ -326,7 +328,7 @@ header {
     padding: 13px 25px;
     border: 1px solid $dark-green;
   }
-  
+
   @media (max-width: 1024px) {
     gap: 70px;
     grid-template-columns: 1fr;
@@ -345,7 +347,7 @@ header {
     .company__value__button {
       padding: 14px 0px;
     }
-    .company-value__desc{
+    .company-value__desc {
       display: flex;
       flex-direction: column;
     }
@@ -354,8 +356,12 @@ header {
 // desc
 .description {
   padding: 150px 12.5%;
+  &__long-text {
+    font-size: 22px;
+    line-height: 150%;
+  }
   // padding-left: 242px;
-  &__short-text{
+  &__short-text {
     margin-right: 255px;
   }
   @media (max-width: 1024px) {
@@ -379,7 +385,7 @@ header {
   }
   .description__container {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
   &__short-text {
     max-width: 483px;
@@ -393,7 +399,7 @@ header {
 }
 // list
 .promise {
-  padding: 150px 20px;
+  padding: 150px 12.5%;
   background-image: url("/img/course-back.png");
   background-position: center;
   @media (max-width: 1024px) {
@@ -417,6 +423,9 @@ header {
     &__item {
       flex-direction: column;
     }
+    &__list {
+      grid-template-columns: 1fr !important;
+    }
   }
   &__list {
     display: grid;
@@ -439,7 +448,7 @@ header {
     color: #4c604a;
   }
   .numeration {
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
@@ -455,6 +464,7 @@ header {
   }
   &__item {
     display: flex;
+    max-width: 503px;
   }
   .item__wrap {
     display: flex;
@@ -487,13 +497,13 @@ header {
 .accordion__container:nth-child(1) {
   border-top: 1px solid rgba(85, 85, 85, 0.3);
 }
-@media (max-width:1024px) {
-  .panel{
+@media (max-width: 1024px) {
+  .panel {
     font-size: 18px !important;
   }
-  .accordion{
+  .accordion {
     font-size: 20px !important;
-    &__svg{
+    &__svg {
       top: 42%;
       // transform: translateY(-50%);
       width: 25px;
@@ -502,7 +512,6 @@ header {
   }
 }
 .accordion__container {
-
   .panel {
     padding-bottom: 30px;
     font-family: "Montserrat";
@@ -520,7 +529,7 @@ header {
   border-bottom: 1px solid rgba(85, 85, 85, 0.3);
 }
 .accordion {
-    position: relative;
+  position: relative;
 
   &__svg {
     position: relative;
@@ -554,7 +563,7 @@ header {
 .active {
   svg {
     transform: rotate(180deg);
-    
+
     path {
       d: path(
         "M9.3667 20C9.3667 19.7239 9.59056 19.5 9.8667 19.5H30.1334C30.4095 19.5 30.6334 19.7239 30.6334 20C30.6334 20.2761 30.4095 20.5 30.1334 20.5H9.8667C9.59056 20.5 9.3667 20.2761 9.3667 20Z"

@@ -11,8 +11,11 @@
 }
 .slider__item {
 //   border: 1px solid black;
-
+min-width: 370px;
 max-width: 380px;
+@media (max-width:1024px) {
+  min-width: 0;
+}
 }
 .slick-slider {
 }
