@@ -279,11 +279,17 @@
   }
 }
 @media (max-width: 1900px) and (min-width: 1025px) {
+  .cards__description{
+    min-width: 371px;
+  }
   .fresh__banner {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 40px 25px !important;
+  }
+  .banner {
+    background-size: 50%;
   }
 }
 .fresh__women {
@@ -440,15 +446,5 @@
     * {
       max-width: 100%;
     }
-  }
-}
-
-// For buttons
-.pressed svg {
-  path {
-    fill: $white;
-  }
-  circle {
-    fill: $light-green;
   }
 }

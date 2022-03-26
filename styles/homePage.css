@@ -342,6 +342,9 @@
 }
 
 @media (max-width: 1900px) and (min-width: 1025px) {
+  .cards__description {
+    min-width: 371px;
+  }
   .fresh__banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -354,6 +357,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 40px 25px !important;
+  }
+  .banner {
+    background-size: 50%;
   }
 }
 
