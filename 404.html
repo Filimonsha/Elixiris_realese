@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ooops..</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/404.css" />
+  </head>
+  <body>
+    <header class="header home-page__header">
+      <div class="navigation navigation_desck">
+        <a href="./index.html"><img src="./img/footer-logo-mobile.svg" alt="" srcset="" /></a>
+        <nav class="nav">
+          <a href="./about.html" class="nav__link">ABOUT</a>
+          <a href="./course.html" class="nav__link">THE COURSE</a>
+          <a href="./reviews.html" class="nav__link">REVIEWS</a>
+          <a href="" class="nav__link nav__link_book-course-link btn-3"
+            >BOOK COURSE</a
+          >
+          
+        </nav>
+      </div>
+      <div class="navigation_mob">
+        <img class="logo_mobile" src="./img/footer-logo-mobile.svg" alt="" srcset="" />
+        <div class="menu__wrap">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu">
+            <nav>
+              <li><a href="./about.html" class="nav__link">ABOUT</a></li>
+              <li><a href="./course.html" class="nav__link">THE COURSE</a></li>
+              <li>
+                <a href="#"
+                  ><a href="./reviews.html" class="nav__link">REVIEWS</a></a
+                >
+              </li>
+              <li>
+                <a href="" class="nav__link nav__link_book-course-link btn-3"
+                  >BOOK COURSE</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <main class="main">
+      <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p class="text-1">
+          The page doesn’t exist or was removed. We suggest you go back to the
+          homepage.
+        </p>
+        <a href="./index.html"> BACK TO HOMEPAGE </a>
+      </div>
+    </main>
 
-
-
-
-
-
-
-    
-        <footer class="footer home-page__footer">
+    <footer class="footer home-page__footer">
       <div class="footer__nav">
         <a href="./index.html">
           <picture>
@@ -63,6 +109,16 @@
         <img src="./img/logo-mini.svg" alt="" class="footer__mini-logo" />
       </div>
     </footer>
-
-</body>
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      let menu = document.querySelector(".menu");
+      let body = document.querySelector("body");
+      console.log(body);
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("active");
+        menu.classList.toggle("active");
+        body.classList.toggle("body-overflow-h");
+      });
+    </script>
+  </body>
 </html>
