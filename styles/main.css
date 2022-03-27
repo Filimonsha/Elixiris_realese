@@ -165,7 +165,9 @@ button {
   }
 }
 
-.btn-1:active, .btn-3:active, .btn-2:active {
+.btn-1:active,
+.btn-3:active,
+.btn-2:active {
   -webkit-transform: scaleY(95%);
           transform: scaleY(95%);
 }
@@ -607,6 +609,10 @@ button {
 }
 
 @media (max-width: 373px) {
+  .btn-3, .btn-1, .btn-2 {
+    padding: 14px 5px !important;
+    font-size: 14px !important;
+  }
   .book-btn {
     padding: 14px 5px !important;
     -ms-flex-item-align: normal;

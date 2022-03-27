@@ -3,9 +3,8 @@
   background: #e5ece4;
 }
 
-
 .top {
-  .top-plant_mobile{
+  .top-plant_mobile {
     display: none;
   }
   background: $super-light-green;
@@ -51,17 +50,17 @@
       line-height: 150% !important;
     }
   }
-
 }
 @media (max-width: 376px) {
-  .top-plant{
+  .top-plant {
     display: none;
   }
-  .top-plant_mobile{
+  .top-plant_mobile {
     display: block !important;
   }
 }
 .our-story {
+  background: #f7f7f7;
   padding: 100px 0;
   img {
     max-width: 100%;
@@ -115,10 +114,9 @@
     padding-top: 122.8%; // 593 this pushes the image down, and keeps it proportional as it resizes
     z-index: 1; // make this image render on top of the bottom
   }
-  @media (min-width: 2200px){
-    &__plant{
-          grid-column: -16 / span 7;
-
+  @media (min-width: 2200px) {
+    &__plant {
+      grid-column: -16 / span 7;
     }
   }
   @media (max-width: 376px) {
@@ -150,6 +148,9 @@
 
 .little {
   background-image: url("/img/plant-back-about.jpg");
+  @media (max-width: 376px) {
+    background-image: url("/img/plant-back-about_mobile.jpg");
+  }
   &__text {
     @media (max-width: 1024px) {
       padding: 0 25px;

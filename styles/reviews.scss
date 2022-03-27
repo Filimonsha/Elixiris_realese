@@ -54,20 +54,31 @@
     }
   }
 }
-.reviews__navigation_mobile{
+.reviews__navigation_mobile {
   display: none;
 }
-@media (max-width: 376px) {
-  img{
-    max-width: 75px;
-    max-height: 75px;
-  }
+@media (max-width: 480px) {
   .top-plant {
     display: none;
   }
   .top-plant_mobile {
     display: block !important;
   }
+}
+@media (max-width: 376px) {
+  .reviews {
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    }
+  }
+
+  // .top-plant {
+  //   display: none;
+  // }
+  // .top-plant_mobile {
+  //   display: block !important;
+  // }
   .reviews__author {
     width: 75px;
     height: 75px;
@@ -84,16 +95,33 @@
     grid-template-rows: 105px 1fr !important;
   }
 }
-@media (max-width: 1024px) {
-  .reviews__navigation{
-    display: none;
+@media (min-width: 1025px) {
+  .reviews {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .reviews__navigation_mobile{
+}
+@media (max-width: 1024px) {
+  .reviews__review-wrap__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  // .reviews__review-wrap__content_first{
+  //   display: block !important;
+  // }
+  .reviews__navigation {
+    // display: none;
+  }
+  .reviews__navigation_mobile {
     display: block;
-    position:initial !important;
+    position: initial !important;
   }
   .reviews__slider__item {
     grid-template-rows: 185px 1fr;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
   }
   .reviews__author {
     max-width: 150px;
@@ -149,6 +177,7 @@
 .reviews__review-wrap__content {
   padding-top: 33px;
 }
+
 .reviews {
   padding-top: 150px;
   padding-bottom: 141px;
@@ -188,9 +217,9 @@
   &__img {
     width: 150px;
     height: 150px;
-    @media (max-width:375px) {
-          width: 75px;
-    height: 75px;
+    @media (max-width: 375px) {
+      width: 75px;
+      height: 75px;
     }
   }
   & &__comma {
@@ -239,7 +268,7 @@
   }
   &__location {
     /* Text */
-    
+
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
@@ -269,10 +298,19 @@
 
   max-width: 380px;
 }
+.slick-slide {
+  // margin-right: 20px;
+  padding: 3px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .slick-track {
   display: flex;
 }
+
 .slick-list {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
   position: relative;
 
   display: block;

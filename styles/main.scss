@@ -135,15 +135,17 @@ button {
     padding: 13px 7px;
   }
 }
-.btn-1:active,.btn-3:active,.btn-2:active {
-    transform: scaleY(95%);
-  }
+.btn-1:active,
+.btn-3:active,
+.btn-2:active {
+  transform: scaleY(95%);
+}
 .btn-1:focus {
-    border: 1px solid #4c604a;
-    // padding: +3px;
-    outline: none;
-  }
-.btn-3:hover{
+  border: 1px solid #4c604a;
+  // padding: +3px;
+  outline: none;
+}
+.btn-3:hover {
   color: #ffffff !important;
   background-color: #4c604a !important;
 }
@@ -168,8 +170,8 @@ button {
   background: $white !important;
 }
 .book-btn:active {
-    transform: scaleY(95%);
-  }
+  transform: scaleY(95%);
+}
 .btn-3 {
   &:hover {
     color: #ffffff !important;
@@ -409,7 +411,7 @@ button {
   padding: 15px;
   background: #e5ece4;
   background-image: url("/img/menu-plant.png");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
   padding-top: 142px;
@@ -481,6 +483,10 @@ button {
 }
 
 @media (max-width: 373px) {
+  .btn-3,.btn-1,.btn-2{
+    padding: 14px 5px !important;
+    font-size: 14px !important;
+  }
   .book-btn {
     padding: 14px 5px !important;
     align-self: normal;
