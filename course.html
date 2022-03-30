@@ -5,18 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/course.css" />
+    <!-- <link rel="stylesheet" href="./styles/course.css" /> -->
     <title>Course</title>
   </head>
   <body>
-    <header class="header home-page__header">
+    <header class="header header-for-course">
       <div class="navigation navigation_desck">
         <a href="./index.html"><img src="./img/logo.svg" alt="" srcset="" /></a>
-
+        <!-- <nav>
+          <ul class="nav">
+            <li><a href="./about.html" class="nav__link">ABOUT</a></li>
+            <li><a href="./course.html" class="nav__link">THE COURSE</a></li>
+            <li><a href="./reviews.html" class="nav__link">REVIEWS</a></li>
+            <li>
+              <a href="" class="nav__link nav__link_book-course-link btn-3"
+                >BOOK COURSE</a
+              >
+            </li>
+          </ul>
+        </nav> -->
         <nav class="nav">
-          <a href="./about.html" class="nav__link">ABOUT</a>
-          <a href="./course.html" class="nav__link">THE COURSE</a>
-          <a href="./reviews.html" class="nav__link">REVIEWS</a>
+          <ul class="nav">
+            <li><a href="./about.html" class="nav__link">ABOUT</a></li>
+            <li><a href="./course.html" class="nav__link">THE COURSE</a></li>
+            <li><a href="./reviews.html" class="nav__link">REVIEWS</a></li>
+          </ul>
           <a href="" class="nav__link nav__link_book-course-link btn-3"
             >BOOK COURSE</a
           >
@@ -32,29 +45,36 @@
           </div>
           <div class="menu">
             <nav>
-              <li><a href="./about.html" class="nav__link">ABOUT</a></li>
-              <li><a href="./course.html" class="nav__link">THE COURSE</a></li>
-              <li>
-                <a href="#"
-                  ><a href="./reviews.html" class="nav__link">REVIEWS</a></a
-                >
-              </li>
-              <li>
-                <a href="" class="nav__link nav__link_book-course-link btn-3"
-                  >BOOK COURSE</a
-                >
-              </li>
+              <ul>
+                <li><a href="./about.html" class="nav__link">ABOUT</a></li>
+                <li>
+                  <a href="./course.html" class="nav__link">THE COURSE</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><a href="./reviews.html" class="nav__link">REVIEWS</a></a
+                  >
+                </li>
+                <li>
+                  <a href="" class="nav__link nav__link_book-course-link btn-3"
+                    >BOOK COURSE</a
+                  >
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-for-course">
       <section class="top">
         <div class="top__wrapper">
-          <h1 class="top__h1 main-title">Breathe a Sigh of Relief</h1>
+          <h1>Breathe a Sigh of Relief</h1>
           <p class="top__text text-1">
-            We know how anxious asthma can make one feel. The Elixiris is a gentle, comfortable, sustainable and healthy process. All the ingredients are pure and safe.  All aspects of the process are backed by science. 
+            We know how anxious asthma can make one feel. The Elixiris is a
+            gentle, comfortable, sustainable and healthy process. All the
+            ingredients are pure and safe. All aspects of the process are backed
+            by science.
           </p>
         </div>
         <picture>
@@ -402,7 +422,7 @@
             </div>
           </div>
           <div class="company-value__desc">
-            <h1 class="company-value__titile main-title">The Elixiris Value</h1>
+            <h2 class="company-value__titile main-title">The Elixiris Value</h2>
             <p class="company-value__text text-1">
               The Elixiris course provides significant value. It presents the
               opportunity of resolving all your asthma symptoms and becoming
@@ -468,11 +488,11 @@
         </div>
       </section>
       <section class="promise">
-        <div class="container promise__container">
-          <h1 class="promise__title main-title">
+        <div class=" promise__container">
+          <h2 class="promise__title main-title">
             Our <br />
             Promise
-          </h1>
+          </h2>
           <div class="promise__list">
             <div class="promise__item">
               <span class="numeration">01</span>
@@ -550,6 +570,7 @@
       </section>
     </main>
 
+
     <footer class="footer home-page__footer">
       <div class="footer__nav">
         <a href="./index.html">
@@ -567,10 +588,14 @@
         </a>
 
         <!-- <img src="./img/white-logo.svg" alt="" class="footer__nav__logo" /> -->
-        <nav class="footer__navigation">
-          <a href="./about.html" class="footer__link">ABOUT</a
-          ><a href="./course.html" class="footer__link">THE COURSE</a
-          ><a href="./reviews.html" class="footer__link">REVIEWS</a>
+        <nav>
+          <ul class="footer__navigation">
+            <li>
+              <a href="./about.html" class="footer__link">ABOUT</a>
+            </li>
+            <li><a href="./course.html" class="footer__link">THE COURSE</a></li>
+            <li><a href="./reviews.html" class="footer__link">REVIEWS</a></li>
+          </ul>
         </nav>
         <img src="./img/pay-pal.svg" alt="" class="footer__nav__pay-pal" />
       </div>
@@ -584,47 +609,39 @@
       <div class="footer__annotation">
         <p class="footer__text">Made with ❤️️️ ️by DigitalDesign.NYC</p>
         <div class="footer__annotation__links">
-          <a href="./index.html" class="footer__annotation__link">
-            ©2021 Elexiris |
-          </a>
-          <a href="./terms-of-use.html" class="footer__annotation__link">
-            Terms of Use |</a
-          ><a href="" class="footer__annotation__link">Privacy Policy | </a
-          ><a href="" class="footer__annotation__link">Accessibility | </a
-          ><a href="" class="footer__annotation__link">Site Map | </a
-          ><a href="./contact.html" class="footer__annotation__link">Contact</a>
+          <ul>
+            <li>
+              <a href="./index.html" class="footer__annotation__link">
+                ©2021 Elexiris
+              </a>
+            </li>
+            <li>
+              <a href="./terms-of-use.html" class="footer__annotation__link">
+                Terms of Use
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__annotation__link">Privacy Policy </a>
+            </li>
+            <li>
+              <a href="" class="footer__annotation__link">Accessibility </a>
+            </li>
+            <li><a href="" class="footer__annotation__link">Site Map </a></li>
+            <li>
+              <a href="./contact.html" class="footer__annotation__link"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
         <img src="./img/logo-mini.svg" alt="" class="footer__mini-logo" />
       </div>
     </footer>
-    <script>
-      let menuBtn = document.querySelector(".menu-btn");
-      let menu = document.querySelector(".menu");
-      let body = document.querySelector("body");
-      console.log(body);
-      menuBtn.addEventListener("click", function () {
-        menuBtn.classList.toggle("active");
-        menu.classList.toggle("active");
-        body.classList.toggle("body-overflow-h");
-      });
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-          this.classList.toggle("active");
-
-          /* Toggle between hiding and showing the active panel */
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

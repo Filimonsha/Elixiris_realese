@@ -1,5 +1,13 @@
 $(document).ready(function () {
-  $(".slider").slick({
+  $(".reviews__slider").slick({
+    // centerPadding: "600px",
+    slidesToShow: 1,
+    prevArrow: $(".slider__prev"),
+    nextArrow: $(".slider__next"),
+  });
+});
+$(document).ready(function () {
+  $(".cards__slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -27,18 +35,24 @@ $(document).ready(function () {
 let menuBtn = document.querySelector(".menu-btn");
 let menu = document.querySelector(".menu");
 let body = document.querySelector("body");
-console.log(body);
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
   menu.classList.toggle("active");
   body.classList.toggle("body-overflow-h");
 });
 
-// let prevNav = document.querySelector(".slider__prev");
-// let nextNav = document.querySelector(".slider__next");
-// prevNav.addEventListener('click',function(){
-//     prevNav.classList.add("pressed")
-//     setTimeout(function(){
-//       prevNav.classList.remove("pressed")
-//     },2000)
-// })
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
