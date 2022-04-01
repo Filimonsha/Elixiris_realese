@@ -309,7 +309,7 @@ button {
   margin-right: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .footer {
     padding: 0 20px;
     padding-top: 60px;
@@ -385,19 +385,27 @@ button {
     margin-bottom: 32px;
   }
 }
-@media (max-width:1024px) and (min-width:550px) {
+@media (max-width:924px) and (min-width:570px) {
+  .footer__nav{
+    flex-direction: row !important;
+
+  }
   .footer__navigation{
     flex-direction: row !important;
   }
-    .footer__navigation li {
+  .footer__navigation li{
     margin-bottom: 0 !important;
-    margin-right:30px;
+    margin-right: 25px;
   }
   .footer__nav__logo{
-    /* margin-bottom: 40px; */
+    margin-bottom: 0 !important;
   }
-  .footer__nav{
-    padding-bottom: 30px  !important ; 
+  .footer__text{
+    font-size: 14px !important;
+
+  }
+  .footer__annotation__links a{
+    font-size: 12px;
   }
 }
 .footer__annotation {
@@ -938,6 +946,7 @@ button {
 @media (max-width: 1024px) {
   .fresh {
     padding-left: 0;
+    padding-bottom: 0;
     font-size: calc(24px + 36 * (100vw / 4400));
   }
   .fresh__wrapper {
@@ -953,6 +962,9 @@ button {
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  .moment{
+    padding-top: 150px;
   }
 }
 
@@ -1891,6 +1903,7 @@ button {
 }
 
 .company-value__img-stack {
+
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr) [12];
@@ -1917,6 +1930,7 @@ button {
 
 @media (max-width: 1024px) {
   .company-value__img-stack {
+    justify-items: end;
     -ms-grid-row: 1;
     grid-row: 1;
     display: -ms-grid;
